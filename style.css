@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color: #44475a;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer h3 {
+    color: white;
+}
+
+main {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#genius {
+    display: grid;
+    grid-template-areas: "green-area red-area" "yellow-area blue-area";
+    gap: 10px;
+    border: 10px solid white;
+    border-radius: 100%;
+    background-color: white;
+    width: 450px;
+    height: 450px;
+}
+
+#green {
+    grid-area: green-area;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+#yellow {
+    grid-area: yellow-area;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+#blue {
+    grid-area: blue-area;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+#red {
+    grid-area: red-area;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.unselected {
+    opacity: .4;
+}
